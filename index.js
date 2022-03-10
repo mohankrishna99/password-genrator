@@ -5,24 +5,29 @@ let pwd1 = document.getElementById('pwd1')
 let pwd2 = document.getElementById('pwd2')
 let pwd3 = document.getElementById('pwd3')
 let pwd4 = document.getElementById('pwd4')
+let inp = document.getElementById('input')
 function pwdGen() {
+    let pwdLen = 8
+    if(inp.value){
+        pwdLen = inp.value
+    } 
     pwd1.textContent = ''
-    for( let i = 0; i < 8; i++) {
+    for( let i = 0; i < pwdLen; i++) {
         pwd1.textContent += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
 
     pwd2.textContent = ''
-    for( let i = 0; i < 8; i++) {
+    for( let i = 0; i < pwdLen; i++) {
         pwd2.textContent += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
 
     pwd3.textContent = ''
-    for( let i = 0; i < 8; i++) {
+    for( let i = 0; i < pwdLen; i++) {
         pwd3.textContent += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
 
     pwd4.textContent = ''
-    for( let i = 0; i < 8; i++) {
+    for( let i = 0; i < pwdLen; i++) {
         pwd4.textContent += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
 }

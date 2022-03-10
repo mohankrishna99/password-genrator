@@ -29,7 +29,12 @@ span{
     color: #55F991
 }
 
+input{
+    width: 300px;
+}
+
 button{
+    margin-top: 5px;
     background-color: #10b981;
     border: none;
     border-radius: 4px;
