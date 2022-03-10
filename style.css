@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
 html, body {
     margin: 0;
     padding: 0;
     background-color: #1F2937;
+    font-family: Inter;
 
 }
 
@@ -12,7 +14,7 @@ header{
 }
 h1{
     color: white;
-    /*font-family: Inter;*/
+    
     font-weight: 800;
     font-size: 40px;
 }
@@ -51,4 +53,12 @@ button{
     width: 211px;
     margin: 5px 10px;
     height: 39px;
+}
+
+#pwd1, #pwd2, #pwd3, #pwd4 {
+    text-align: center;
+    color: #55F991;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
 }
