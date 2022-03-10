@@ -11,7 +11,7 @@ let pwd4 = document.getElementById('pwd4')
 let inp = document.getElementById('input')
 function pwdGen() {
     let pwdLen = 8
-    if(inp.value){
+    if(inp.value >= 1 && inp.value <= 15){
         pwdLen = inp.value
     } 
     pwd1.textContent = ''
