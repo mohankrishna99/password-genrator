@@ -9,7 +9,8 @@ let pwd2 = document.getElementById('pwd2')
 let pwd3 = document.getElementById('pwd3')
 let pwd4 = document.getElementById('pwd4')
 let inp = document.getElementById('input')
-function pwdGen() {
+const pwdGenBtn = document.getElementById("pwdgen-btn")
+pwdGenBtn.addEventListener("click", function () {
     let pwdLen = 8
     if(inp.value >= 1 && inp.value <= 15){
         pwdLen = inp.value
@@ -33,4 +34,4 @@ function pwdGen() {
     for( let i = 0; i < pwdLen; i++) {
         pwd4.textContent += possibleChars[Math.floor(Math.random() * possibleChars.length)]
     }
-}
+})
