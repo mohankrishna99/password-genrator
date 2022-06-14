@@ -8,13 +8,12 @@ html, body {
 }
 
 header{
-    padding: 30px 10px ;
+    padding: 25px 10px ;
     margin: 0px 52px;
     border-bottom: 1px solid #2f3e53
 }
 h1{
     color: white;
-    
     font-weight: 800;
     font-size: 40px;
 }
