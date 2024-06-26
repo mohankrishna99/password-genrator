@@ -9,12 +9,19 @@ let pwd2 = document.getElementById('pwd2')
 let pwd3 = document.getElementById('pwd3')
 let pwd4 = document.getElementById('pwd4')
 let inp = document.getElementById('input')
+let isDarkMode = true
 const pwdGenBtn = document.getElementById("pwdgen-btn")
+const darkModeBtn = document.getElementById("darkmode-btn")
 
 pwdGenBtn.addEventListener("click", function () {
     let pwdLen = 8
     if(inp.value >= 1 && inp.value <= 15){
         pwdLen = inp.value
+    } else if (inp.value === "") {
+        pwdLen = 8
+    } else {
+        alert("Enter a valid number between 1 and 15")
+        return
     }
     
     pwd1.textContent = pwdGenerator(pwdLen)
@@ -46,3 +53,17 @@ function pwdGenerator(len){
     }
     return pwd
 }
+
+darkModeBtn.addEventListener("click", function () {
+    if (isDarkMode === true) {
+        document.querySelector("html").style.backgroundColor = "#ecfdf5"
+        document.querySelector("body").style.backgroundColor = "#ecfdf5"
+        document.querySelector("h1").style.color = "#1c1c1c"
+        isDarkMode = false
+    } else if (isDarkMode === false) {
+        document.querySelector("html").style.backgroundColor = "#1F2937"
+        document.querySelector("body").style.backgroundColor = "#1F2937"
+        document.querySelector("h1").style.color = "white"
+        isDarkMode = true
+    }
+})

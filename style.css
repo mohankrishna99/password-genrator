@@ -66,3 +66,14 @@ button{
     line-height: 32px;
     font-weight: 500;
 }
+
+#darkmode-img {
+    width:25px;
+    height:25px;
+}
+
+#darkmode-btn {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust left position */
+}
